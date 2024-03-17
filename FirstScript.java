@@ -1,5 +1,4 @@
 package dev.selenium.getting_started;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -26,6 +25,9 @@ public class FirstScript {
         WebElement message = driver.findElement(By.id("message"));
         message.getText();
 
+        System.setProperty("webdriver.chrome.driver", "/path/to/chromedriver");
+        WebDriver driver = new ChromeDriver();
+        
         driver.quit();
     }
 }
